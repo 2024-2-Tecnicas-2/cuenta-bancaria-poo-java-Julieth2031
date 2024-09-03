@@ -10,7 +10,7 @@ public class Principal {
         System.out.println("Bienvenido al banco");
         System.out.print("Ingresa tu nombre: ");
         String titular = scanner.nextLine();
-        System.out.print("Ingresa tu número de cuenta: ");
+        System.out.print("Ingresa tu numero de cuenta: ");
         String numeroCuenta = scanner.nextLine();
         System.out.print("Ingresa tu saldo inicial: ");
         double saldo = scanner.nextDouble();
@@ -22,20 +22,20 @@ public class Principal {
         System.out.println("Tu saldo actual es: " + miCuenta.getSaldo());
 
         // Ingreso de dinero
-        System.out.print("¿Cuánto dinero quieres ingresar? ");
+        System.out.print("¿Cuanto dinero quieres ingresar? ");
         double cantidadIngresar = scanner.nextDouble();
         miCuenta.ingresar(cantidadIngresar);
         System.out.println("Tu nuevo saldo es: " + miCuenta.getSaldo());
 
         // Retiro dinero
-        System.out.print("¿Cuánto dinero quieres retirar? ");
+        System.out.print("¿Cuanto dinero quieres retirar? ");
         double cantidadRetirar = scanner.nextDouble();
         miCuenta.retirar(cantidadRetirar);
         System.out.println("Tu nuevo saldo es: " + miCuenta.getSaldo());
 
         // Calculo de saldo
         double saldoConInteres = miCuenta.calcularInteres();
-        System.out.println("Tu saldo con el interés aplicado es: " + saldoConInteres);
+        System.out.println("Tu saldo con el interes aplicado es: " + saldoConInteres);
 
         scanner.close();
     }
